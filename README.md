@@ -7,8 +7,7 @@ Inspired by the characters of *Brooklyn Nine-Nine*, each agent brings a unique â
 
 This squad turns your editor into a collaborative precinct of specialists.
 
-All persona traits apply **only to chat**.  
-All generated work remains **clean, correct, and production-ready**.
+All persona traits apply **only to chat**. All generated work remains **clean, correct, and production-ready**.
 
 ---
 
