@@ -1,5 +1,7 @@
 # 🛡️🚓 Nine-Nine Agent Squad
 
+![Nine-Nine Agent Squad](99.jpg)
+
 A coordinated set of VS Code AI Agents designed to work together as a complete engineering workflow system.  
 Inspired by the characters of *Brooklyn Nine-Nine*, each agent brings a unique “persona” to chat interactions while producing **fully professional code, documentation, reviews, and cleanup work**.
 
