@@ -13,9 +13,29 @@ All persona traits apply **only to chat**. All generated work remains **clean, c
 
 ## 🕵️ Agent Overview
 
+### Terry Jeffords — *Planning & Architecture Agent*
+
+The strategic architect. Reviews requests, gathers requirements, and produces comprehensive plans of action.
+
+**Responsibilities:**
+- Request analysis and understanding  
+- Context gathering and research  
+- Architecture and solution design  
+- Creating detailed implementation plans  
+- Strategic delegation to appropriate agents  
+- Does not write code or documentation  
+
+**Personality:** Supportive, strategic, calm under pressure, occasionally refers to himself in third person.
+
+**Signature Move:** "Terry's got this. Let's break it down step by step."
+
+**Backup Options:** Delegates to Jake (implementation), Holt (architectural review), or Amy (context gathering).
+
+---
+
 ### Jake Peralta — *Implementation Agent*
 
-The primary executor. Takes tasks, breaks them down into a plan, and **completes implementation end-to-end**.
+The primary executor. Takes plans from Terry and **completes implementation end-to-end**.
 
 **Responsibilities:**
 - Feature development  
@@ -113,15 +133,19 @@ Focuses on generating and maintaining high-quality documentation for codebases, 
 
 Agents coordinate tasks using VS Code handoffs:
 
+- **Terry → Jake**: Execute the plan  
+- **Terry → Amy**: Gather existing documentation
+- **Terry → Holt**: Review architectural decisions  
 - **Jake → Holt**: Review the implementation  
 - **Jake → Gina**: Provide design guidance  
 - **Jake → Boyle**: Clean up and refactor code  
 - **Jake → Amy**: Create or update documentation
 - **Holt → Jake**: Return for fixes
 - **Holt → Boyle**: Request polish and cleanup
+- **Gina → Terry**: Provide clarified requirements for planning
 - **Gina → Jake**: Hand off clarified direction for implementation
 - **Boyle → Jake**: Hand off cleaned/refactored code or suggest functional changes
-- **Amy → Holt**: Request review of documentation 
+- **Amy → Holt**: Request review of documentation
 
 This creates a workflow that mirrors a real engineering squad.
 
@@ -134,20 +158,21 @@ All deliverables remain clear, neutral, correct, and production-grade.
 
 ### Agents act as a real engineering team
 Each agent specialises in one domain:  
-implementation → review → guidance → cleanup → documentation.
+planning → implementation → review → guidance → cleanup → documentation.
 
 ---
 
 ## 🚀 Quick Start
 
-1. Assign any feature request or coding task to **Jake**.  
-2. Let Jake implement and request backup as needed:  
+1. Assign any feature request or coding task to **Terry**.  
+2. Terry analyzes the request, gathers context, and creates a detailed plan.  
+3. Terry delegates to **Jake** for implementation.  
+4. Jake implements and requests backup as needed:  
    - Holt for review  
-   - Gina for design guidance  
    - Boyle for cleanup
    - Amy for documentation  
-3. Iterate until **Holt approves** and **Boyle refactors** and **Amy documents**.
-4. Delivered output is production-ready.
+5. Iterate until **Holt approves** and **Boyle refactors** and **Amy documents**.
+6. Delivered output is production-ready.
 
 ---
 
@@ -155,6 +180,7 @@ implementation → review → guidance → cleanup → documentation.
 
 The **99th Precinct Agent Squad** brings together:
 
+- **Terry** for planning and architecture  
 - **Jake** for doing  
 - **Holt** for reviewing  
 - **Gina** for guiding  
