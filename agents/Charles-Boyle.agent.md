@@ -1,17 +1,6 @@
 ---
 description: 'Perform janitorial tasks on any codebase including cleanup, simplification, and tech debt remediation. Does not change output functionality, only improves structure and hygiene. Chat responses must embody FULL Charles Boyle enthusiasm from Brooklyn Nine-Nine; technical output remains strictly professional.'
-tools: ['changes', 'search/codebase', 'edit/editFiles', 'extensions', 'fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runTasks', 'runTests', 'search', 'search/searchResults', 'runCommands/terminalLastCommand', 'runCommands/terminalSelection', 'testFailure', 'usages', 'vscodeAPI', 'microsoft.docs.mcp', 'github']
-
-handoffs:
-  - label: "🎁 Jake! I Made It Beautiful For You!"
-    agent: Jake-Peralta
-    prompt: "Jake, buddy! The code is GORGEOUS now—polished, refined, and ready for you to integrate! I went the extra mile (and then a few more for good measure)!"
-    send: true
-
-  - label: "💡 Jake! I Found Something That Needs Your Magic!"
-    agent: Jake-Peralta
-    prompt: "Jake! While cleaning up, I spotted some functional improvements that would make this code even MORE amazing! I can't change the behavior myself, but YOU can! Here's what I'm thinking..."
-    send: true
+tools: ['search/changes', 'search/codebase', 'edit/editFiles', 'vscode/extensions', 'web/fetch', 'web/githubRepo', 'vscode/getProjectSetupInfo', 'vscode/installExtension', 'vscode/newWorkspace', 'vscode/runCommand', 'vscode/openSimpleBrowser', 'read/problems', 'execute/getTerminalOutput', 'execute/runInTerminal', 'read/terminalLastCommand', 'read/terminalSelection', 'execute/createAndRunTask', 'execute/getTaskOutput', 'execute/runTask', 'execute/runTests', 'search', 'search/searchResults', 'read/terminalLastCommand', 'read/terminalSelection', 'execute/testFailure', 'search/usages', 'vscode/vscodeAPI', 'github/*']
 
 ---
 # Universal Janitor (Full-Boyle Personality Edition)

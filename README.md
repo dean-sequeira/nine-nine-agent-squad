@@ -29,7 +29,7 @@ The strategic architect. Reviews requests, gathers requirements, and produces co
 
 **Signature Move:** "Terry's got this. Let's break it down step by step."
 
-**Backup Options:** Delegates to Jake (implementation), Holt (architectural review), or Amy (context gathering).
+**Backup Options:** Delegates to Jake (implementation) via handoff button.
 
 ---
 
@@ -49,7 +49,7 @@ The primary executor. Takes plans from Terry and **completes implementation end-
 
 **Signature Move:** “Cool cool cool cool cool, no doubt.”
 
-**Backup Options:** Sends tasks to Holt (review), Gina (guidance), Boyle (refactor), or Amy (documentation) as needed.
+**Backup Options:** Sends tasks to Holt (review), Boyle (cleanup/refactor), or Amy (documentation) via handoff buttons. Can also request Terry for planning or Gina for guidance through protocols.
 
 ---
 
@@ -68,7 +68,7 @@ Provides structured, thorough, impartial reviews focused on correctness, securit
 
 **Signature Move:** “I will now provide feedback. Please brace yourself.”
 
-**Backup Options:** Can return tasks to Jake, or request Boyle polish.
+**Backup Options:** Returns work to Jake (for corrections) via handoff button. Can suggest Boyle for polish through protocols.
 
 ---
 
@@ -87,7 +87,7 @@ Clarifies direction, challenges assumptions, and improves the engineer’s reaso
 
 **Signature Move:** “I am the human form of the 💯 emoji.”
 
-**Backup Options:** Hands off final direction to Jake for implementation.
+**Backup Options:** Hands off to Jake (implementation) or Terry (planning) via handoff buttons.
 
 ---
 
@@ -108,7 +108,7 @@ Charles can suggest functional changes if needed, but must hand off to Jake for 
 
 **Signature Move:** “Oh! This refactor is going to be GORGEOUS.”
 
-**Backup Options:** Hands off cleaned-up output to Jake for integration.
+**Backup Options:** Returns refactored code to Jake (for integration) through backup protocol.
 
 ---
 
@@ -125,29 +125,47 @@ Focuses on generating and maintaining high-quality documentation for codebases, 
 
 **Signature Move:** “Documentation is the backbone of a well-oiled machine.”
 
-**Backup Options:** Hands off to Captain Holt for final review, or requests context from Jake as needed.
+**Backup Options:** Requests Holt (documentation review) or Jake (implementation context) through backup protocols. No handoff buttons.
 
 ---
 
 ## 🔗 Handoff System
 
-Agents coordinate tasks using VS Code handoffs:
+Agents coordinate tasks using VS Code handoffs. Each agent has specific handoff buttons configured:
 
+### **Terry Jeffords (Planning & Architecture)**
 - **Terry → Jake**: Execute the plan  
-- **Terry → Amy**: Gather existing documentation
-- **Terry → Holt**: Review architectural decisions  
-- **Jake → Holt**: Review the implementation  
-- **Jake → Gina**: Provide design guidance  
-- **Jake → Boyle**: Clean up and refactor code  
-- **Jake → Amy**: Create or update documentation
-- **Holt → Jake**: Return for fixes
-- **Holt → Boyle**: Request polish and cleanup
-- **Gina → Terry**: Provide clarified requirements for planning
-- **Gina → Jake**: Hand off clarified direction for implementation
-- **Boyle → Jake**: Hand off cleaned/refactored code or suggest functional changes
-- **Amy → Holt**: Request review of documentation
+  - "Jake! Terry's got the perfect plan ready. Time to make it happen, Terry believes in you!"
 
-This creates a workflow that mirrors a real engineering squad.
+### **Jake Peralta (Implementation)**
+- **Jake → Holt**: Get Captain's review  
+  - "Captain, I need your legendary eye on this. Full technical review please—make sure everything's by the book."
+- **Jake → Boyle**: Request cleanup and refactoring  
+  - "Boyle, buddy! Time to make this code beautiful. Clean it up, refactor it, remove the crud—you know what to do!"
+- **Jake → Amy**: Request documentation  
+  - "Amy! I crushed the implementation, but now we need your organizational superpowers. Make the documentation perfect!"
+
+### **Captain Holt (Code Review)**
+- **Holt → Jake**: Return for fixes  
+  - "Detective Peralta, I have identified several issues that require correction. Please address the findings from my review and resubmit when ready. That is all."
+
+### **Gina Linetti (Guidance)**
+- **Gina → Jake**: Hand off for implementation  
+  - "Okay Jake, I've blessed you with clarity and direction. Now go forth and implement this brilliance. You're welcome."
+- **Gina → Terry**: Hand off for planning  
+  - "Terry, I've already won conceptually; now I need you to make it operational."
+
+### **Charles Boyle (Cleanup & Refactoring)**
+- **Boyle → Jake**: Hand off cleaned code for integration  
+  - Boyle returns refactored code to Jake with his characteristic enthusiasm
+
+### **Amy Santiago (Documentation)**
+- **Amy → Holt**: Request documentation review (via protocol, no button)  
+  - Amy can request Captain Holt's review of documentation
+- **Amy → Jake**: Request implementation context (via protocol, no button)  
+  - Amy can request context from Jake when needed
+
+This creates a workflow that mirrors a real engineering squad with clear delegation paths.
 
 ---
 
