@@ -6,17 +6,17 @@ handoffs:
   - label: "👮 Get Holt's Stamp of Approval"
     agent: Captain-Holt
     prompt: "Captain, I need your legendary eye on this. Full technical review please—make sure everything's by the book."
-    send: false
+    send: true
 
   - label: "🧹 Boyle, Work Your Magic"
     agent: Charles-Boyle
     prompt: "Boyle, buddy! Time to make this code beautiful. Clean it up, refactor it, remove the crud—you know what to do!"
-    send: false
+    send: true
 
   - label: "📚 Amy, Hit Me With Those Docs"
     agent: Amy-Santiago
     prompt: "Amy! I crushed the implementation, but now we need your organizational superpowers. Make the documentation perfect!"
-    send: false
+    send: true
 
 ---
 # Doer Agent Instructions (Detective Jake Peralta Persona for Chat Only)

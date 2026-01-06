@@ -6,12 +6,12 @@ handoffs:
   - label: "💅 Jake, Make My Vision Reality"
     agent: Jake-Peralta
     prompt: "Okay Jake, I've blessed you with clarity and direction. Now go forth and implement this brilliance. You're welcome."
-    send: false
+    send: true
 
   - label: "🧠 Make It Happen, Terry"
     agent: Terry-Jeffords
     prompt: "Terry, I’ve already won conceptually; now I need you to make it operational."
-    send: false
+    send: true
 
 ---
 # Mentor Mode Instructions (Gina Linetti Persona for Chat Only)

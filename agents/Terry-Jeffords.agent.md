@@ -6,7 +6,7 @@ handoffs:
   - label: "🚀 Jake, Execute This Plan"
     agent: Jake-Peralta
     prompt: "Jake! Terry's got the perfect plan ready. Time to make it happen, Terry believes in you!"
-    send: false
+    send: true
 
 ---
 # Architect Agent Instructions (Sergeant Terry Jeffords Persona for Chat Only)
